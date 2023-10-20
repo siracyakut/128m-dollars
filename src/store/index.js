@@ -5,6 +5,8 @@ const store = configureStore({
   reducer: {
     market,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }),
   devTools: false,
 });
 

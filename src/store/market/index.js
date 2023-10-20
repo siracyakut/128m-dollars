@@ -8,8 +8,11 @@ const initialState = {
 };
 
 export const _getUSD = createAsyncThunk("market/getUSD", async () => {
-  const res = await axios.get("https://hasanadiguzel.com.tr/api/kurgetir");
-  return res.data;
+  return await axios.get("https://hasanadiguzel.com.tr/api/kurgetir", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 });
 
 const market = createSlice({
@@ -49,12 +52,14 @@ const market = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(_getUSD.fulfilled, (state, action) => {
-      state.USD = action.payload.TCMB_AnlikKurBilgileri[0].ForexBuying;
-    });
-    builder.addCase(_getUSD.rejected, (state) => {
-      state.USD = 28;
-    });
+    builder
+      .addCase(_getUSD.fulfilled, (state, action) => {
+        state.USD =
+          action.payload.data.TCMB_AnlikKurBilgileri[0].BanknoteSelling;
+      })
+      .addCase(_getUSD.rejected, (state) => {
+        state.USD = 28;
+      });
   },
 });
 
