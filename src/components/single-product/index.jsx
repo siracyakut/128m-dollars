@@ -2,6 +2,7 @@ import { useBasket, useMoney, useUSD } from "store/market/hooks";
 import { motion } from "framer-motion";
 import { formatMoney } from "helpers/formats";
 import { addBasket, removeBasket } from "store/market/actions";
+import TextTransition, { presets } from "react-text-transition";
 
 const itemMotion = {
   hidden: {
@@ -37,7 +38,9 @@ export default function SingleProduct({ product }) {
         >
           -
         </button>
-        <p>{thisItem ? thisItem.count : 0}</p>
+        <TextTransition className="product-count" springConfig={presets.stiff}>
+          {thisItem ? thisItem.count : 0}
+        </TextTransition>
         <button
           type="button"
           onClick={() => addBasket(product)}
