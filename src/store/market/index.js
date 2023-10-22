@@ -1,19 +1,10 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   basket: [],
   money: 128000000000,
-  USD: -1,
+  loading: true,
 };
-
-export const _getUSD = createAsyncThunk("market/getUSD", async () => {
-  return await axios.get("https://hasanadiguzel.com.tr/api/kurgetir", {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-});
 
 const market = createSlice({
   name: "market",
@@ -34,7 +25,7 @@ const market = createSlice({
           count: 1,
         });
       }
-      state.money -= action.payload.tl_price / state.USD;
+      state.money -= action.payload.price;
     },
     _removeBasket: (state, action) => {
       const item = state.basket.find((i) => i.id === action.payload.id);
@@ -48,20 +39,13 @@ const market = createSlice({
       } else {
         state.basket = state.basket.filter((b) => b.id !== action.payload.id);
       }
-      state.money += action.payload.tl_price / state.USD;
+      state.money += action.payload.price;
     },
-  },
-  extraReducers: (builder) => {
-    builder
-      .addCase(_getUSD.fulfilled, (state, action) => {
-        state.USD =
-          action.payload.data.TCMB_AnlikKurBilgileri[0].BanknoteSelling;
-      })
-      .addCase(_getUSD.rejected, (state) => {
-        state.USD = 28;
-      });
+    _setLoading: (state, action) => {
+      state.loading = action.payload;
+    },
   },
 });
 
-export const { _addBasket, _removeBasket } = market.actions;
+export const { _addBasket, _removeBasket, _setLoading } = market.actions;
 export default market.reducer;

@@ -1,35 +1,57 @@
-import { useBasket, useUSD } from "store/market/hooks";
+import { useBasket } from "store/market/hooks";
 import products from "assets/products.json";
-import CardItem from "components/card-item";
 import { formatMoney } from "helpers/formats";
 
 export default function Card() {
   const basket = useBasket();
-  const USD = useUSD();
 
-  const toplam = basket.reduce((acc, curr) => acc + curr.count, 0);
   const toplamFiyat = basket.reduce(
-    (acc, curr) => acc + (products[curr.id - 1].tl_price / USD) * curr.count,
+    (acc, curr) => acc + products[curr.id - 1].price * curr.count,
     0,
   );
 
   return (
-    <div className="container">
-      {basket.length > 0 && (
-        <div className="checkout-card">
-          {basket.map((item, idx) => (
-            <CardItem key={idx} item={item} />
+    <div className="w-full bg-white py-5 px-10 mt-5 rounded-lg mb-10 flex items-center justify-center">
+      <table className="border-separate border-spacing-0 table-fixed w-full text-[#212529]">
+        <thead>
+          <tr className="text-[19px] text-left font-semibold">
+            <th className="py-3 border-b-[0.25px] border-[#212529]">Ürün</th>
+            <th className="py-3 border-b-[0.25px] border-[#212529]">Adet</th>
+            <th className="py-3 border-b-[0.25px] border-[#212529]">
+              Birim Fiyat
+            </th>
+            <th className="py-3 border-b-[0.25px] border-[#212529]">
+              Toplam Fiyat
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {basket.map((item) => (
+            <tr className="text-left break-words" key={item.id}>
+              <td className="py-3 border-b-[0.25px] border-[#212529]">
+                {products[item.id - 1].name}
+              </td>
+              <td className="py-3 border-b-[0.25px] border-[#212529]">
+                {item.count}
+              </td>
+              <td className="py-3 border-b-[0.25px] border-[#212529]">
+                {formatMoney(products[item.id - 1].price)}
+              </td>
+              <td className="py-3 border-b-[0.25px] border-[#212529]">
+                {formatMoney(products[item.id - 1].price * item.count)}
+              </td>
+            </tr>
           ))}
-          <div
-            style={{ fontWeight: "bold", color: "green" }}
-            className="checkout-card-item"
-          >
-            <span className="count">x{toplam}</span>
-            <span className="name">TOPLAM</span>
-            <span className="price">{formatMoney(toplamFiyat)}</span>
-          </div>
-        </div>
-      )}
+        </tbody>
+        <tfoot className="text-[19px] font-semibold">
+          <tr className="break-words">
+            <td />
+            <td />
+            <td className="py-3">Toplam</td>
+            <td className="py-3">{formatMoney(toplamFiyat)}</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   );
 }

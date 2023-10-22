@@ -1,33 +1,17 @@
-import { useMoney } from "store/market/hooks";
-import { formatMoney } from "helpers/formats";
-import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const money = useMoney();
-
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="header"
+      initial={{ opacity: 0, translateY: 10 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      className="flex items-center justify-center bg-white h-[70px] w-full shadow-header-shadow"
     >
-      <div className="header-info">
-        {money > 0 ? (
-          <>
-            <span>Harcamak için</span>
-            <TextTransition
-              className="header-money"
-              springConfig={presets.wobbly}
-            >
-              {formatMoney(money)}
-            </TextTransition>
-            <span>paranız var!</span>
-          </>
-        ) : (
-          <>Hiç paran kalmadı, parasız adamı sadece anası sever!</>
-        )}
-      </div>
+      <img
+        src={require("assets/img/logo.png")}
+        alt="#128MilyarDolarNerede"
+        className="w-[280px] hover:opacity-80 transition-all duration-150 cursor-pointer"
+      />
     </motion.div>
   );
 }

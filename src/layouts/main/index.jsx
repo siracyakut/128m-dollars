@@ -1,15 +1,21 @@
 import Loading from "components/loading";
-import { useUSD } from "store/market/hooks";
 import { Outlet } from "react-router-dom";
+import { useLoading } from "store/market/hooks";
 import { useEffect } from "react";
-import { getUSD } from "store/market/actions";
+import { setLoading } from "store/market/actions";
 
 export default function MainLayout() {
-  const USD = useUSD();
+  const loading = useLoading();
 
   useEffect(() => {
-    getUSD();
+    const interval = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
-  return <>{USD !== -1 ? <Outlet /> : <Loading />}</>;
+  return <>{loading ? <Loading /> : <Outlet />}</>;
 }

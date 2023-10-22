@@ -1,194 +1,266 @@
 [
   {
     "id": 1,
-    "name": "Ekmek",
-    "tl_price": 6,
-    "image": "https://images.migrosone.com/sanalmarket/product/05120000/05120000-a957e2-1650x1650.jpg"
+    "name": "8 Tane Ekmek",
+    "price": 2,
+    "image": "ekmek.jpg"
   },
   {
     "id": 2,
-    "name": "100 Adet Sakız",
-    "tl_price": 55,
-    "image": "https://cdn.akakce.com/z/falim/falim-tekli-damla-100-adet.jpg"
+    "name": "1 Litre Süt",
+    "price": 1.40,
+    "image": "sut.jpg"
   },
   {
     "id": 3,
-    "name": "5 Lt. Ayçiçek Yağı",
-    "tl_price": 205,
-    "image": "https://resim.epey.com/575418/m_bizim-aycicek-yagi-5-lt-1.png"
+    "name": "BionTech Aşı (2 Doz)",
+    "price": 110,
+    "image": "biontech.jpg"
   },
   {
     "id": 4,
-    "name": "TOGG",
-    "tl_price": 1557000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Togg_T10X_%28cropped%29.jpg"
+    "name": "Ejder Meyvesi (1 kg)",
+    "price": 17,
+    "image": "ejder_meyvesi.jpg"
   },
   {
     "id": 5,
-    "name": "Galatasaray",
-    "tl_price": 6641613000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Galatasaray_Star_Logo.png"
+    "name": "Burj Khalifa",
+    "price": 1500000000,
+    "image": "burjkhalifa.jpg"
   },
   {
     "id": 6,
-    "name": "Fenerbahçe",
-    "tl_price": 5254253840,
-    "image": "https://upload.wikimedia.org/wikipedia/tr/archive/8/86/20210803203947%21Fenerbah%C3%A7e_SK.png"
+    "name": "35'li Çokomel",
+    "price": 3,
+    "image": "cokomel.jpg"
   },
   {
     "id": 7,
-    "name": "Twitter",
-    "tl_price": 1187480800000,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png"
+    "name": "Big Mac Menu",
+    "price": 3,
+    "image": "bigmac.jpg"
   },
   {
     "id": 8,
-    "name": "Mercedes 300 SLR Uhlenhaut Coupe",
-    "tl_price": 3832423800,
-    "image": "https://cdn.webtekno.com/media/cache/content_detail_v2/article/85918/en-pahali-mercedes-benz-otomobiller-1581870574.jpg"
+    "name": "Porsche Cayenne",
+    "price": 300000,
+    "image": "porsche.jpg"
   },
   {
     "id": 9,
-    "name": "Rolex Daytona",
-    "tl_price": 1349000,
-    "image": "https://www.nasyonelchrono.com/cms/uploads/1/20230407095631/Buyukm116518ln-0078.jpg"
+    "name": "Lil Uzi Vert’in Alnındaki Elmas",
+    "price": 24000000,
+    "image": "uzivert.jpg"
   },
   {
     "id": 10,
-    "name": "Bill Gates's Lana",
-    "tl_price": 5397808000,
-    "image": "https://i.hbrcdn.com/haber/2021/10/25/bill-gates-arrived-in-bodrum-with-his-luxury-14484845_amp.jpg"
+    "name": "20 Kilo Patates + 20 Kilo Soğan",
+    "price": 10,
+    "image": "patates_sogan.jpg"
   },
   {
     "id": 11,
-    "name": "GUCCI Stuart Hughes Kemer",
-    "tl_price": 6740500,
-    "image": "https://img.paratic.com/dosya/2015/07/gucci-stuart-hughes-kemer.jpg"
+    "name": "Newyork Yankees",
+    "price": 5000000000,
+    "image": "yankees.jpg"
   },
   {
     "id": 12,
-    "name": "GUCCI Jackie Timsah Derisi Çanta",
-    "tl_price": 1008378,
-    "image": "https://img.paratic.com/dosya/2015/07/jackie-timsah-derisi-canta.jpeg"
+    "name": "iPhone 12 Pro Max 512 GB",
+    "price": 2500,
+    "image": "iphone12.jpg"
   },
   {
     "id": 13,
-    "name": "Burj Khalifa",
-    "tl_price": 40488900000,
-    "image": "https://cdn-imgix.headout.com/media/images/c9d1214661ed07932829a44387fdad1a-2700-dubai-burj-khalifa-sunset-tickets--at-the-top--level-124---125--01.jpg"
+    "name": "Airpods",
+    "price": 125,
+    "image": "airpods.jpg"
   },
   {
     "id": 14,
-    "name": "Big Mac Menü",
-    "tl_price": 150,
-    "image": "https://images.deliveryhero.io/image/fd-tr/LH/b934-hero.jpg"
+    "name": "1 KG Kuzu Pirzola",
+    "price": 15,
+    "image": "pirzola.jpg"
   },
   {
     "id": 15,
-    "name": "İstanbul-İzmir Otoyolu",
-    "tl_price": 296913980000,
-    "image": "https://static.birgun.net/resim/haber-detay-resim/2021/01/11/istanbul-izmir-otoyolu-ucretine-zam-ucakla-berlin-e-gidilebilir-827580-5.jpg"
+    "name": "Pudra Şekeri (250GR)",
+    "price": 1,
+    "image": "pudra_sekeri.jpg"
   },
   {
     "id": 16,
-    "name": "2+1 Ev",
-    "tl_price": 1500000,
-    "image": "https://i2.milimaj.com/i/milliyet/75/1200x675/63247c1186b2443440a0f969.jpg"
+    "name": "Playstation 5",
+    "price": 1200,
+    "image": "ps5.jpg"
   },
   {
     "id": 17,
-    "name": "Çeyrek Altın",
-    "tl_price": 2800,
-    "image": "https://productimages.hepsiburada.net/s/11/375/9203970408498.jpg"
+    "name": "Gemicik",
+    "price": 35000000,
+    "image": "gemicik.jpg"
   },
   {
     "id": 18,
-    "name": "Fiat Egea",
-    "tl_price": 1000000,
-    "image": "https://arbstorage.mncdn.com/modelphotos/16000e9c-46f7-448b-80e0-ed1aa05d5c23_912x513.jpg"
+    "name": "Houston Rockets",
+    "price": 2200000000,
+    "image": "houston_rockets.jpg"
   },
   {
     "id": 19,
-    "name": "Osmangazi Köprüsü",
-    "tl_price": 32391480000,
-    "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1876000/osmangazi-kogr-1876342.jpg"
+    "name": "Tesla Model X",
+    "price": 250000,
+    "image": "tesla.jpg"
   },
   {
     "id": 20,
-    "name": "1 KG Kuzu Pirzola",
-    "tl_price": 400,
-    "image": "https://images.migrosone.com/sanalmarket/product/24010013/24010013-7aed5a.jpg"
+    "name": "Çeyrek Altın",
+    "price": 105,
+    "image": "ceyrek_altin.jpg"
   },
   {
     "id": 21,
-    "name": "Altın Musluk",
-    "tl_price": 41000,
-    "image": "https://m.media-amazon.com/images/I/617p9JhOfxS._AC_UF1000,1000_QL80_.jpg"
+    "name": "2+1 Ev",
+    "price": 35000,
+    "image": "apartman.jpg"
   },
   {
     "id": 22,
-    "name": "Lil Uzi Vert'in Alnındaki Elmas",
-    "tl_price": 647824800,
-    "image": "https://media.gq-magazine.co.uk/photos/601d6b9ffc954a7c0aefcf64/1:1/w_1963,h_1963,c_limit/LiluziForehead.png"
+    "name": "Fiat Egea",
+    "price": 24000,
+    "image": "fiat_egea.jpg"
   },
   {
     "id": 23,
-    "name": "Playstation 5",
-    "tl_price": 18000,
-    "image": "https://cdn.cimri.io/image/1000x1000/sony-playstation-5-oyun-konsolu_622618971.jpg"
+    "name": "Osmangazi Köprüsü",
+    "price": 1200000000,
+    "image": "osmangazi.jpg"
   },
   {
     "id": 24,
-    "name": "iPhone 14 Pro Max 256 GB",
-    "tl_price": 66350,
-    "image": "https://productimages.hepsiburada.net/s/283/550/110000271395252.jpg"
+    "name": "5 LT Ayçiçek Yağı",
+    "price": 10,
+    "image": "cicekyag.jpg"
   },
   {
     "id": 25,
-    "name": "Dr. Oetker 250 gr Pudra Şekeri",
-    "tl_price": 25,
-    "image": "https://cdn.akakce.com/z/dr-oetker/dr-oetker-250-gr.jpg"
+    "name": "Nike Air Max 97",
+    "price": 190,
+    "image": "airmax.jpg"
   },
   {
     "id": 26,
-    "name": "576 Adet Bebek Bezi",
-    "tl_price": 5444,
-    "image": "https://cdn.dsmcdn.com/ty33/product/media/images/20201210/15/37091939/86270189/1/1_org_zoom.jpg"
+    "name": "iPad Pro 1TB",
+    "price": 1750,
+    "image": "ipad_pro.jpg"
   },
   {
     "id": 27,
-    "name": "SpaceX Falcon 9 Roket",
-    "tl_price": 2429316000,
-    "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2022/01/19/thumbs_b_c_f0cfc9337655fcf624d947fdfcd81b86.jpg"
+    "name": "Havuzlu Villa",
+    "price": 1500000,
+    "image": "villa.jpg"
   },
   {
     "id": 28,
-    "name": "Lionel Messi",
-    "tl_price": 1034659666,
-    "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2023/02/21/thumbs_b_c_2d64b147d001ddb86e23a382ea66bc4b.jpg?v=143423"
+    "name": "İstanbul-İzmir Otoyolu",
+    "price": 11000000000,
+    "image": "duble.jpg"
   },
   {
     "id": 29,
-    "name": "24 Ayar 1 Kg Külçe Altın",
-    "tl_price": 1743272,
-    "image": "https://www.ahlatcikuyumculuk.com.tr/ZiynetAltinResimleri/DF7A969B-61A5-483E-AA3F-3B7D56B68314.jpg"
+    "name": "Binance Coin",
+    "price": 215,
+    "image": "bnb.jpg"
   },
   {
     "id": 30,
-    "name": "Survivor Adası",
-    "tl_price": 1619550000,
-    "image": "https://renklirotalar.com/wp-content/uploads/2015/08/11084712_1539522299605988_1560264141_n-640x512.jpg"
+    "name": "İstanbul Havalimanı",
+    "price": 12250000000,
+    "image": "havalimani.jpg"
   },
   {
     "id": 31,
-    "name": "Kola",
-    "tl_price": 32,
-    "image": "https://images.migrosone.com/sanalmarket/product/08010001/8010001_yan-fb0c69-1650x1650.jpg"
+    "name": "Altın Musluk",
+    "price": 1500,
+    "image": "altin_musluk.jpg"
   },
   {
     "id": 32,
-    "name": "Mia Khalifa",
-    "tl_price": 1000000,
-    "image": "https://tr.web.img3.acsta.net/pictures/17/01/20/12/42/192403.jpg"
+    "name": "Bebek Bezi",
+    "price": 8,
+    "image": "bebek_bezi.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Instagram Uygulaması",
+    "price": 100000000000,
+    "image": "ig.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Bebek Maması (99gr)",
+    "price": 18,
+    "image": "bebek_mamasi.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Survivor Adası",
+    "price": 60000000,
+    "image": "survivor_adasi.jpg"
+  },
+  {
+    "id": 36,
+    "name": "F-35 Savaş Uçağı",
+    "price": 90000000,
+    "image": "f35.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Neymar Jr.",
+    "price": 263000000,
+    "image": "neymarjr.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Ankapark",
+    "price": 750000000,
+    "image": "ankapark.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Külçe Altın (1 KG)",
+    "price": 57685,
+    "image": "kulce_altin.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Space X Falcon 9 Roket",
+    "price": 90000000,
+    "image": "falcon9.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Mercedes S600 Guard",
+    "price": 568000,
+    "image": "s600.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Twitter",
+    "price": 41000000000,
+    "image": "twitter.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Kylian Mbappe",
+    "price": 180000000,
+    "image": "mbappe.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Bitcoin",
+    "price": 30000,
+    "image": "bitcoin.jpg"
   }
 ]

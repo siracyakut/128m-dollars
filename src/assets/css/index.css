@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-[#f9f9f9];
+  }
+
+  body {
+    @apply bg-[url('assets/img/bg-pattern.png')];
+  }
+
+  html,
+  body,
+  #root {
+    @apply min-h-full;
+  }
+}
